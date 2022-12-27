@@ -86,8 +86,6 @@ h3 /*header above search box*/
     font-size: 1rem;
     border:none;
     border-top: 1px solid var(--border-color);
-    
-   
     border-right: 1px solid transparent;
     outline:none;
     width: 395px;
