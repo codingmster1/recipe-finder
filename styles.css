@@ -2,6 +2,7 @@
 {
     --light-color: rgb(250, 246, 240);
     --header-height:150px;
+    --border-color:#ccc;
 
 }
 
@@ -22,7 +23,7 @@ body
     
 }
 
-header{
+header{ /*Header at very top of screen*/
 
     background: var(--light-color);
     height: var(--header-height);
@@ -35,7 +36,7 @@ header{
     padding-right: 400px;
 }
 
-h3
+h3 /*header above search box*/
 {
     align-items:center;
     display: flex;
@@ -59,6 +60,7 @@ h3
     display:flex;
     justify-content: flex-end;
     padding-right: 200px;
+    box-shadow: 0px 2px 8px 0px;
 
 }
 .search2
@@ -73,14 +75,52 @@ h3
 
 }
 
-.search input[type="text"]{
+.search1
+{
+    gap: 10px;
+}
+
+.search input[type="text"]{ /*Search box*/
     padding: 8px 10px;
     line-height: 1.5;
     font-size: 1rem;
-    border: none;
-    border: 1px solid;
+    border:none;
+    border-top: 1px solid var(--border-color);
+    
+   
+    border-right: 1px solid transparent;
+    outline:none;
     width: 395px;
     height: 50px;
+    
+    
 }
 
+.search input[type="text"]:focus {
+    border-left: 1px solid var(--border-color);
+    border-bottom-color: var(--border-color);
+    width: 395px;
+}
+
+.btn
+{
+    padding: 8px 10px;
+    background:transparent;
+    border-radius: 2px;
+    user-select: none;
+    font-size: 1rem;
+    border: 2px solid rgb(145, 224, 211);
+    cursor: pointer;
+    
+    
+}
+.button2
+{
+    gap: 10px;
+}
+
+.btn:hover 
+{
+    background:rgb(98, 224, 203);
+}
 
