@@ -69,13 +69,18 @@ h3 /*header above search box good health is here*/
     align-items: center;
     display:flex;
     justify-content: flex-end;
-    padding-right: 470px;
-    height: 150px;
+    padding-right: 450px;
+    height: 130px;
 
 
 }
 
-
+.search3 /*directly edits find button*/
+{
+    
+    display: flex;
+    gap: 10px;
+}
 
 .search input[type="text"]{ /*Search box*/
     padding: 8px 10px;
@@ -86,19 +91,21 @@ h3 /*header above search box good health is here*/
     border-right: 1px solid transparent;
     outline:none;
     width: 395px;
-    height: 50px;
+    height: 45px;
     
     
 }
 
 .search input[type="text"]:focus { /*additional search box functions*/
-    border-left: 1px solid var(--border-color);
+    border-left-color: 1px solid var(--border-color);
     border-bottom-color: var(--border-color);
     width: 395px;
 }
 
 .btn /*Find button*/
 {
+    width: 75px;
+    height: 45px;
     padding: 8px 10px;
     background:transparent;
     border-radius: 2px;
@@ -106,7 +113,7 @@ h3 /*header above search box good health is here*/
     font-size: 1rem;
     border: 2px solid rgb(145, 224, 211);
     cursor: pointer;
-    
+    background-color:aquamarine;
     
 }
 
