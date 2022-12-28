@@ -45,6 +45,7 @@ h3 /*header above search box good health is here*/
     height: 170px;
     font-size:40px;
     font-family: 'Andika', sans-serif;
+    text-shadow: 4px 4px 4px #aaa;
 }
 
 .bar  /*magnifying glass logo*/
@@ -114,7 +115,7 @@ h3 /*header above search box good health is here*/
     border: 2px solid rgb(145, 224, 211);
     cursor: pointer;
     background-color:aquamarine;
-    
+    box-shadow: 0px 2px 8px 0px;
 }
 
 
@@ -122,4 +123,78 @@ h3 /*header above search box good health is here*/
 {
     background:rgb(98, 224, 203);
 }
+
+.container
+{
+    text-align:center;
+    height: calc(100vh - var(--header-height));
+}
+
+.recipe 
+{
+    height: 300px;
+    width: 300px;
+    padding: 4px;
+    box-shadow: 0px 0px 10px 4px var(--border-color);
+    margin: 20px;
+}
+
+.recipe-title
+{
+    height: 50px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.recipe-pic
+{
+    height:210px;
+    display:block;
+    justify-content: center;
+    align-items: center;
+}
+
+.recipe-pic img
+{
+    height: 100%;
+    width: 100%;
+    display:block;
+    justify-content: center;
+    align-items: center;
+}
+
+#recipe-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recipe-text
+{
+    height: 120px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 200ms ease-in-out;
+
+}
+
+.recipe-text ul
+{
+    list-style-type: circle;
+    list-style-position: inside;
+    text-align: left;
+    padding: 5px;
+
+}
+
+.recipe-text ul > li 
+{
+    padding: 5px;
+}
+
+
+
 
