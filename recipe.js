@@ -32,7 +32,9 @@ const renderRecipes = (recipeList=[]) => {
                 <li><a href="">FULL RECIPE</a></li>
             </ul>
         </div>
-    </div>`
+    </div>`;
+
+    recipeContainer.insertAdAdjacentHTML("beforeend", htmlStr)
 
     });
 };
