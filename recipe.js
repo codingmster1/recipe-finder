@@ -19,6 +19,7 @@ const getRecipesStepsStr =(ingredientLines = []) => {
     for (var step of ingredientLines) {
         str = str+ `<li>${step}</li>`
     }
+    return str;
 }
 
 
@@ -26,6 +27,7 @@ const renderRecipes = (recipeList=[]) => {
     recipeList.forEach(recipeObj => {
         const {label: recipeTitle, ingredientLines, image:recipeImage,
         } = recipeObj.recipe;
+        const recipeStepStr=getRecipeStepStr(ingredientLines);
         const htmlStr= ` <div class="recipe">
         <div class="recipe-title">${recipeTitle}</div>
         <div class="recipe-pic">
