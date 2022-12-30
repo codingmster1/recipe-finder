@@ -7,7 +7,7 @@ function loadRecipes(type = "paneer") {
     const url = baseUrl + `&q=${type}`;
     fetch(url)
     .then(res=>res.json())
-    .then(data => console.log(data.hits))
+    .then((data) => renderRecipes(data.hits))
     .catch((error)  => console.log(error));
 
 
