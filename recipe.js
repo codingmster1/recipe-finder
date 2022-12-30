@@ -6,4 +6,33 @@ function loadRecipes(type = "paneer") {
 
     const url = baseUrl + `&q=${type}`;
     fetch(url)
+    .then(res=>res.json())
+    .then(data => console.log(data.hits))
+    .catch((error)  => console.log(error));
+
+
 }
+loadRecipes();
+
+const renderRecipes = (recipeList=[]) => {
+    recipeList.forEach(recipeObj => {
+        const {label: recipeTitle, ingredientLines, image:recipeImage,
+        } = recipeObj.recipe;
+        const htmlStr= ` <div class="recipe">
+        <div class="recipe-title">Stuffed Chicken Breast</div>
+        <div class="recipe-pic">
+            <img src="stuffedchicken3.jpg" alt="Recipe">
+        </div>
+        <div class="recipe-text">
+            <ul>
+                <li>Calories: 262 - Carbs: 9g - Protein: 46g - Fat: 4g</li>
+                <li>Mozzarella, Basil Leaves, Sundried Tomatoes,</li>
+                <li>Curry, and Paprika.</li>
+                <li>Make Time: 25 Minutes</li>
+                <li><a href="">FULL RECIPE</a></li>
+            </ul>
+        </div>
+    </div>`
+
+    });
+};
