@@ -14,6 +14,14 @@ function loadRecipes(type = "paneer") {
 }
 loadRecipes();
 
+const getRecipesStepsStr =(ingredientLines = []) => {
+    let str = "";
+    for (var step of ingredientLines) {
+        str = str+ `<li>${step}</li>`
+    }
+}
+
+
 const renderRecipes = (recipeList=[]) => {
     recipeList.forEach(recipeObj => {
         const {label: recipeTitle, ingredientLines, image:recipeImage,
@@ -25,11 +33,11 @@ const renderRecipes = (recipeList=[]) => {
         </div>
         <div class="recipe-text">
             <ul>
-                <li>Calories: 262 - Carbs: 9g - Protein: 46g - Fat: 4g</li>
-                <li>Mozzarella, Basil Leaves, Sundried Tomatoes,</li>
-                <li>Curry, and Paprika.</li>
-                <li>Make Time: 25 Minutes</li>
-                <li><a href="">FULL RECIPE</a></li>
+                <li>step</li>
+                <li>step</li>
+                <li>step</li>
+                <li>step</li>
+                <li>step</li>
             </ul>
         </div>
     </div>`;
