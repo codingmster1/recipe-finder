@@ -14,7 +14,7 @@ function loadRecipes(type = "paneer") {
 }
 loadRecipes();
 
-const getRecipesStepsStr =(ingredientLines = []) => {
+const getRecipeStepsStr =(ingredientLines = []) => {
     let str = "";
     for (var step of ingredientLines) {
         str = str+ `<li>${step}</li>`
@@ -27,7 +27,7 @@ const renderRecipes = (recipeList=[]) => {
     recipeList.forEach(recipeObj => {
         const {label: recipeTitle, ingredientLines, image:recipeImage,
         } = recipeObj.recipe;
-        const recipeStepStr=getRecipeStepStr(ingredientLines);
+        const recipeStepStr=getRecipeStepsStr(ingredientLines);
         const htmlStr= ` <div class="recipe">
         <div class="recipe-title">${recipeTitle}</div>
         <div class="recipe-pic">
@@ -35,11 +35,7 @@ const renderRecipes = (recipeList=[]) => {
         </div>
         <div class="recipe-text">
             <ul>
-                <li>step</li>
-                <li>step</li>
-                <li>step</li>
-                <li>step</li>
-                <li>step</li>
+                ${recipeStepStr}
             </ul>
         </div>
     </div>`;
