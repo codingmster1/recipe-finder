@@ -147,7 +147,8 @@ h3 /*header above search box good health is here*/
     display:flex;
     align-items:center;
     justify-content: center;
-    font-size: 1rem;
+    font-size: 1.4rem;
+    font-family: 'Sevillana', cursive;
 }
 
 .recipe-pic
@@ -186,7 +187,8 @@ h3 /*header above search box good health is here*/
     background: rgb(248, 240, 240);
     overflow: hidden;
     overflow-y:auto;
-    transform: scale(0.9);
+    transform: scale(1.0);
+    font-family: 'Andika', sans-serif;
    
     
 
