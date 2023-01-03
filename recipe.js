@@ -3,9 +3,12 @@ const appKey = "caa85b8af6dbce63b203c7eb3696d6f1";
 
 const baseUrl = `https://api.edamam.com/api/recipes/v2?type=public&app_id=${appId}&app_key=${appKey}`;
 
-
+const btnFind = document.querySelector(".btn");
 const recipeContainer = document.querySelector("#recipe-container");
 const txtSearch=document.querySelector("#txtSearch");
+
+btnFind.addEventListener("click", () => loadRecipes(txtSearch.value));
+
 
 txtSearch.addEventListener("keyup", (e)=> {
     const inputVal = txtSearch.value;
@@ -14,6 +17,10 @@ txtSearch.addEventListener("keyup", (e)=> {
     }
 })
 
+const setScrollPosition = () => {
+    recipeContainer.scrollTo({top : 0, behaviour: "smooth"});
+};
+
 function loadRecipes(type = "paneer") {
 
     const url = baseUrl + `&q=${type}`;
@@ -21,6 +28,7 @@ function loadRecipes(type = "paneer") {
     .then((res) => res.json())
     .then((data) => renderRecipes(data.hits))
     .catch((error)  => console.log(error));
+    //.finally(() => setScrollPosition());
 
 
 }
