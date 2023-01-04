@@ -224,5 +224,15 @@ h3 /*header above search box good health is here*/
 
 #loading
 {
-    
+    background: url(robotloading.gif) no-repeat center center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    height: 270px;
+   
+}
+
+.hide {
+    display: none;
 }
