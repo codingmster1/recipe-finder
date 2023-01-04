@@ -1,8 +1,9 @@
 :root 
 {
-    --light-color: rgb(250, 246, 240);
+    --light-color: rgb(243, 239, 233);
     --header-height:150px;
     --border-color:#ccc;
+    --dark-color: rgb(121, 247, 121);
 
 }
 
@@ -184,7 +185,7 @@ h3 /*header above search box good health is here*/
     opacity: 0;
     transition: all 200ms ease-in-out;
     /*margin-top: 20px;*/
-    background: rgb(248, 240, 240);
+    background: rgb(231, 225, 225);
     overflow: hidden;
     overflow-y:auto;
     transform: scale(1.0);
@@ -236,3 +237,5 @@ h3 /*header above search box good health is here*/
 .hide {
     display: none;
 }
+
+
