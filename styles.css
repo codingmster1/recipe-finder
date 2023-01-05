@@ -131,7 +131,7 @@ h3 /*header above search box good health is here*/
     height: calc(100vh - var(--header-height));
 }
 
-.recipe 
+.recipe /*Recipe Boxes*/
 {
     height: 300px;
     width: 300px;
@@ -195,7 +195,7 @@ h3 /*header above search box good health is here*/
 
 }
 
-.recipe-text ul
+.recipe-text ul /*List of ingredients for each recipe*/
 {
     list-style-type: circle;
     list-style-position: inside;
@@ -223,19 +223,48 @@ h3 /*header above search box good health is here*/
     height: 445px;
 }
 
-#loading
+#loading /*Loading icon after each search*/
 {
-    background: url(robotloading.gif) no-repeat center center;
-    position: absolute;
-    width: 100%;
+    background: url(loadcolor.gif) no-repeat center center;
+    position:absolute;
+    width: 800%;
     height: 100%;
-    z-index: 999;
-    height: 270px;
+    z-index: 900;
+    height: 200px;
+    width: 1350px;
+    
    
 }
 
-.hide {
+.load
+{
+    align-items: center;
+    justify-content: center;
+    width: 650px;
+}
+
+.hide /*Hides loading icon until you use search bar*/ {
     display: none;
 }
 
+.footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-item {
+    border: 1px solid #fff;
+    background-color: rgb(171, 248, 171);
+    height: 25px;
+    margin-top:1630px;
+    flex: 1;
+  }
+  
+  .footer-one,
+  .footer-three {
+    background-color: rgb(33, 228, 75);
+    flex:initial;
+    width: 270px;
+    
+  }
 

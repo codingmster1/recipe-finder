@@ -34,9 +34,11 @@ function loadRecipes(type = "paneer") {
     .then((data) => { 
         renderRecipes(data.hits);
         toggleLoad(loadingEle, true);
+        
     })
     .catch((error)  => toggleLoad(loadingEle, true));
-    //.finally(() => setScrollPosition());
+   // .finally(() => setScrollPosition());
+    
 
 
 }
