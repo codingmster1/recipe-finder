@@ -225,9 +225,9 @@ h3 /*header above search box good health is here*/
 
 #loading /*Loading icon after each search*/
 {
-    background: url(loadcolor.gif) no-repeat center center;
+    background: url(loading-waiting.gif) no-repeat center center;
     position:absolute;
-    width: 800%;
+    width: 800px;
     height: 100%;
     z-index: 900;
     height: 200px;
@@ -240,7 +240,7 @@ h3 /*header above search box good health is here*/
 {
     align-items: center;
     justify-content: center;
-    width: 650px;
+    width: 1050px;
 }
 
 .hide /*Hides loading icon until you use search bar*/ {
