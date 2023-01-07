@@ -247,7 +247,7 @@ h3 /*header above search box good health is here*/
     display: none;
 }
 
-.footer {
+/*.footer {
     display: flex;
     justify-content: space-between;
   }
@@ -266,5 +266,5 @@ h3 /*header above search box good health is here*/
     flex:initial;
     width: 270px;
     
-  }
+  }*/
 
